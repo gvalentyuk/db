@@ -4,6 +4,7 @@ export const SignUpContainer = styled.div`
     display: flex;
   flex-direction: column;
   width: 380px;
+  padding: 15px;
 `
 
 export const TitleContainer = styled.h2`

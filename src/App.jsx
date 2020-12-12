@@ -10,7 +10,7 @@ import CheckoutPage from "./pages/checkout/checkout.component";
 import Header from "./components/header/header.component";
 import SignInPage from "./pages/sign-in-page/sign-in-page.component";
 import {selectCurrentUser} from "./redux/user/user.selectors";
-import './App.css';
+import { GlobalStyle } from './global.styles';
 
 const App = ({currentUser, setCurrentUser}) => {
     const dispatch = useDispatch()
@@ -19,6 +19,7 @@ const App = ({currentUser, setCurrentUser}) => {
     }, [dispatch, setCurrentUser])
     return (
         <div>
+            <GlobalStyle />
             <Header/>
             <Switch>
                 <Route exact path='/' component={HomePage}/>

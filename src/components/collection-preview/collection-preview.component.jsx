@@ -8,7 +8,7 @@ import {
   TitleContainer,
 } from "./collection-preview.styles";
 
-const CollectionPreview = ({ title, items, match, routeName }) => {
+const CollectionPreview = ({ title, items, routeName }) => {
   const history = useHistory();
   return (
     <CollectionPreviewContainer>
